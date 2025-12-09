@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura</title>
+    <link rel="stylesheet" href="../styles/Arquitectura.css">
+</head>
+<body>
+    <header>
+        <h1>¿Son tan buenas costruyendo?</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dropdown-toggle">
+                    <span class="arrow">▶</span> Especies de Hormigas
+                    <ul class="dropdown-menu" style="display: none;">
+                        <li><a href="paginas/Europa.html">Europa</a></li>
+                        <li>América</li>
+                        <li>Asia</li>
+                        <li>África</li>
+                        <li>Oceania</li>
+                    </ul>
+                </li>
+                <li><a href="Ecosistema.html">Ecosistema</a></li>
+                <li><a href="Arquitectura.html">Arquitectura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+        const arrow = document.querySelector('.arrow');
+        const menu = document.querySelector('.dropdown-menu');
+
+        dropdownToggle.addEventListener('click', function() {
+            const isHidden = menu.style.display === 'none';
+            menu.style.display = isHidden ? 'block' : 'none';
+            arrow.textContent = isHidden ? '▼' : '▶';
+        });
+    </script>
+</body>
+</html>
