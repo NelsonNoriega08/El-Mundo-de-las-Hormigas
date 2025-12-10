@@ -117,3 +117,13 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+.map,
+iframe.map,
+#map {
+    max-width: 90%;
+    width: 90%;
+    height: auto;
+    transform: scale(0.95); /* reduce ligeramente el tamaño */
+    transform-origin: top left;
+}
