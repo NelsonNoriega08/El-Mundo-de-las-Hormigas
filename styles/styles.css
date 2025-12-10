@@ -20,6 +20,12 @@ header {
     gap: 10px;
 }
 
+.titulo{
+    padding-top: 10px;
+    height: 100px;
+    color: rgb(0, 132, 255);
+}
+
 header h1 {
     margin: 0;
     font-size: 1.6rem;
