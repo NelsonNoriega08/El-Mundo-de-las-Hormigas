@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 header {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     padding: 20px;
 }
@@ -23,7 +23,7 @@ header {
 .titulo{
     padding-top: 10px;
     height: 100px;
-    color: rgb(0, 132, 255);
+    color: rgb(0, 255, 136);
 }
 
 header h1 {
@@ -122,6 +122,20 @@ nav a:hover {
     background-color: #8B4513;
 }
 
+img{
+    padding: 35px;
+    width: 700px;
+    height: 400px;
+
+}
+
+.vuelo-nupcial{
+    padding-top: 35px;
+    width: 600px;
+    height: 400px;
+
+}
+
 /* Secciones */
 section {
     max-width: 1400px;
@@ -142,7 +156,7 @@ section p {
 
 /* Footer */
 footer {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     text-align: center;
     padding: 20px;
