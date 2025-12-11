@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+#logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    z-index: 200;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
