@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     padding: 20px;
     text-align: center;
@@ -103,6 +103,51 @@ section {
     border-radius: 5px;
 }
 
+#Estructura-Ubicación {
+    text-align: center;
+}
+
+#hormiguero{
+    width: 600px;
+    height: auto;
+    padding: 35px;
+}
+
+#hormigas-encima-de-pino{
+    width: 600px;
+    height: 400px;
+    padding: 35px;
+}
+
+#mapa-hormiga-argentina {
+    width: 700px;
+    height: auto;
+    padding: 20px;
+}
+
+#Funciones-Ecológicas {
+    text-align: center;
+}
+
+#hormigas-semillas{
+    width: 600px;
+    height: 400px;
+    padding: 35px;
+}
+
+#hormigas-saltamontes{
+    width: 600px;
+    height: 400px;
+    padding: 35px;
+}
+
+#hormigas-alimentandose{
+    width: 600px;
+    height: 400px;
+    padding: 35px;
+}
+
+
 section h2 {
     color: #8B4513;
     margin-bottom: 15px;
@@ -112,9 +157,10 @@ section p {
     text-align: justify;
 }
 
+
 /* Footer */
 footer {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     text-align: center;
     padding: 20px;
