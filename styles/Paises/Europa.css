@@ -24,6 +24,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
@@ -210,6 +211,14 @@ section {
     border-radius: 5px;
 }
 
+.Lasius niger img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
 section h2 {
     color: #8B4513;
     margin-bottom: 15px;
@@ -219,9 +228,10 @@ section p {
     text-align: justify;
 }
 
+
 /* Footer */
 footer {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     text-align: center;
     padding: 20px;
@@ -231,10 +241,10 @@ footer {
 .map,
 iframe.map,
 #map {
-    max-width: 90%;
-    width: 90%;
+    max-width: 100%;
     height: auto;
-    transform: scale(0.85); /* reduce ligeramente el tamaño */
+    display: block;
+    margin: 0% auto;
     transform-origin: center center;
 }
 

@@ -22,6 +22,22 @@ header h1 {
     margin-bottom: 20px;
 }
 
+#logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    z-index: 200;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
 /* Estilos de navegación */
 nav ul {
     list-style: none;
@@ -134,4 +150,84 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+/* ===========================
+   🔹 MEDIA QUERY PARA MÓVILES
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    /* Navegación */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    /* Contenedor principal */
+    .padre-contenedor {
+        padding: 12px;
+    }
+
+    .contenedor-tarjeta {
+        padding: 16px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Texto */
+    .contenedor-tarjeta h2 {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-tarjeta h3 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 16px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
 }

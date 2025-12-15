@@ -21,6 +21,22 @@ header h1 {
     margin-bottom: 20px;
 }
 
+#logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    z-index: 200;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
 /* Estilos de navegación */
 nav ul {
     list-style: none;
@@ -158,9 +174,16 @@ section p {
     text-align: justify;
 }
 
-/* Footer */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
 footer {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     text-align: center;
     padding: 20px;
@@ -247,7 +270,7 @@ iframe.map,
     }
 
     /* Imágenes */
-    .especie img {
+    img {
         max-width: 100%;
         height: auto;
     }

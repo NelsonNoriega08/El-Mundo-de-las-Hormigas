@@ -5,9 +5,20 @@ body {
     margin: 0;
 }
 
-.logo{
-    width: 150px;
-    margin-bottom: 20px;
+#logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    z-index: 200;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
 }
 
 header {
@@ -197,4 +208,134 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+}
+
+/* ===========================
+   🔹 MEDIA QUERY PARA MÓVILES
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    /* Navegación */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    /* Contenedor principal */
+    .padre-contenedor {
+        padding: 12px;
+    }
+
+    .contenedor-tarjeta {
+        padding: 16px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Texto */
+    .contenedor-tarjeta h2 {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-tarjeta h3 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 16px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    /* * 🐜 ESTILOS ESPECÍFICOS DE LA CALCULADORA 
+     */
+
+    .calculator-container {
+        /* Reduce el margen superior e inferior para ocupar más espacio vertical */
+        margin: 20px auto; 
+        
+        /* Reduce el padding interior para que el contenido tenga más espacio */
+        padding: 20px; 
+        
+        /* Asegura que ocupe todo el ancho disponible si hay mucho margen lateral */
+        width: 95%; 
+    }
+
+    .title {
+        /* Reduce el tamaño del título principal para que quepa en una línea */
+        font-size: 1.6em; 
+    }
+
+    .subtitle {
+        /* Reduce el margen inferior para compactar un poco más */
+        margin-bottom: 15px; 
+    }
+
+    .input-group label {
+        /* Asegura que la etiqueta no sea demasiado grande */
+        font-size: 0.95em; 
+    }
+
+    .input-group input {
+        /* Reduce ligeramente el padding de los campos para ahorrar espacio vertical */
+        padding: 10px; 
+        font-size: 0.9em;
+    }
+
+    #calculate-btn {
+        /* Reduce el padding del botón para hacerlo menos alto */
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .result-box {
+        /* Reduce el padding y el tamaño de fuente del resultado */
+        padding: 12px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+    
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
 }
