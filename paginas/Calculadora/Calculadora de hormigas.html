@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Hormigas 🐜</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <img src="../../Img/Logo Hormigas.png" alt="Logo" class="logo">
+            <h1 class="titulo">El Mundo de las Hormigas</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Introducción</a></li>
+                    <li class="dropdown-toggle">
+                        <span class="arrow">▶</span> Especies de Hormigas
+                        <ul class="dropdown-menu" style="display: none;">
+                            <li><a href="../Paises/Europa.html">Europa</a></li>
+                            <li><a href="../Paises/América.html">América</a></li>
+                            <li><a href="../Paises/Asia.html">Asia</a></li>
+                            <li><a href="../Paises/África.html">África</a></li>
+                            <li><a href="../Paises/Ocenaia.html">Oceania</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../Ecosistema.html">Ecosistema</a></li>
+                    <li><a href="../Arquitectura.html">Arquitectura</a></li>
+                    <li><a href="../Calculadora/Calculadora de hormigas.html">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="calculator-container">
+        <h1 class="title">Calculadora de Consumo de Hormigas 🐜</h1>
+        <p class="subtitle">Estima cuántos segundos tardaría una colonia en consumir un animal, basado en su peso.</p>
+
+        <div class="input-group">
+            <label for="ant-count">Cantidad de Hormigas:</label>
+            <input type="number" id="ant-count" value="1000000" min="1" placeholder="Ej: 1,000,000">
+        </div>
+
+        <div class="input-group">
+            <label for="animal-weight">Peso del Animal (en kg):</label>
+            <input type="number" id="animal-weight" value="70" min="0.1" placeholder="Ej: 70 kg (un humano promedio)">
+        </div>
+        
+        <div class="input-group">
+            <label for="animal-type">Tipo de Animal (Opcional):</label>
+            <input type="text" id="animal-type" placeholder="Ej: Vaca, Perro, Humano">
+        </div>
+
+        <button id="calculate-btn">Calcular Tiempo</button>
+
+        <div class="result-box" id="result">
+            <p>Introduce los valores y presiona "Calcular".</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 El Mundo de las Hormigas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

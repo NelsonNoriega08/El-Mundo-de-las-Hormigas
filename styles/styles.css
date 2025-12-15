@@ -3,53 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
 header {
     background-color: #0c700c;
     color: white;
     padding: 20px;
-}
-
-/* Contenedor interno para el header. El logo quedará fijo a la izquierda */
-.header-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding-left: 110px; /* espacio reservado para el logo fijo */
-    display: flex;
-    flex-direction: column; /* título encima, navegación abajo */
-    align-items: center;
-    gap: 10px;
-}
-
-.titulo{
-    padding-top: 10px;
-    height: 100px;
-    color: rgb(0, 255, 136);
+    text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 1.6rem;
-}
-
-/* Logo fijo a la izquierda de la ventana */
-.logo {
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    width: 70px;
-    height: auto;
-    object-fit: contain;
-    z-index: 200;
-}
-
-/* Cuando el logo esté fijo, el contenido del header se centra y queda debajo del título */
-    font-size: 1.6rem;
-}
-
-.logo {
-    width: 250px;
-    height: auto;
-    object-fit: contain;
+    margin-bottom: 20px;
 }
 
 /* Estilos de navegación */
@@ -122,25 +92,11 @@ nav a:hover {
     background-color: #8B4513;
 }
 
-img{
-    padding: 35px;
-    width: 700px;
-    height: 400px;
-
-}
-
-.vuelo-nupcial{
-    padding-top: 35px;
-    width: 600px;
-    height: 400px;
-
-}
-
 /* Secciones */
 section {
-    max-width: 1400px;
-    margin: 20px auto;
-    padding: 10px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
 }
@@ -148,6 +104,23 @@ section {
 section h2 {
     color: #8B4513;
     margin-bottom: 15px;
+}
+
+h3 {
+    color: #0c700c;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #0c700c;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 section p {

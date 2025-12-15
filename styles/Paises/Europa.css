@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     padding: 20px;
     text-align: center;
@@ -61,6 +61,51 @@ nav a:hover {
     color: #FFD700;
 }
 
+/* Estilos para el dropdown */
+.dropdown-toggle {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.dropdown-toggle:hover {
+    color: #FFD700;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #A0522D;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #8B4513;
+}
 
 
 /* Contenedor padre centrado y tarjeta con recuadro */

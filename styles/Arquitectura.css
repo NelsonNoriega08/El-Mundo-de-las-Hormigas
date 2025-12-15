@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     padding: 20px;
     text-align: center;
@@ -106,13 +106,30 @@ section h2 {
     margin-bottom: 15px;
 }
 
+h3 {
+    color: #0c700c;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #0c700c;
+    margin-bottom: 10px;
+}
+
 section p {
     text-align: justify;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 /* Footer */
 footer {
-    background-color: #8B4513;
+    background-color: #0c700c;
     color: white;
     text-align: center;
     padding: 20px;
