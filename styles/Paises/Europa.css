@@ -25,6 +25,8 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    background-image: url('../../Img/Paises/Europa/daniel-sessler-unsplash-scaled.jpg');
+    background-size: cover;
 }
 
 header {
