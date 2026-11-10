@@ -1,0 +1,235 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('../Img/Fondo\ de\ hormigas.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: #0c700c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+#logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    z-index: 200;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Estilos para el dropdown */
+.dropdown-toggle {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.dropdown-toggle:hover {
+    color: #FFD700;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #A0522D;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #8B4513;
+}
+
+/* Secciones */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #0c700c;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #0c700c;
+    margin-bottom: 10px;
+}
+
+section p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #0c700c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===========================
+   🔹 MEDIA QUERY PARA MÓVILES
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    /* Navegación */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    /* Contenedor principal */
+    .padre-contenedor {
+        padding: 12px;
+    }
+
+    .contenedor-tarjeta {
+        padding: 16px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Texto */
+    .contenedor-tarjeta h2 {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-tarjeta h3 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 16px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,341 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f3e9; /* Fondo suave */
+    color: #333;
+    margin: 0;
+}
+
+#logo {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    z-index: 200;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+header {
+    background-color: #0c700c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Estilos para el dropdown */
+.dropdown-toggle {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.dropdown-toggle:hover {
+    color: #FFD700;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #A0522D;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #8B4513;
+}
+
+.Calculadora{
+    margin: auto;
+}
+
+.calculator-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 60px auto; /* Centrado horizontal y espacio vertical */
+    border: 3px solid #6a0d0d; /* Borde temático de hormigas */
+}
+
+.title {
+    text-align: center;
+    color: #4a230f; /* Color oscuro como el suelo */
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6d6d6d;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6a0d0d;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #f07b3f; /* Color temático de hormiga */
+    outline: none;
+}
+
+#calculate-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f07b3f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#calculate-btn:hover {
+    background-color: #e06c30;
+}
+
+#calculate-btn:active {
+    transform: translateY(1px);
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ffe0b2; /* Fondo de resultado */
+    border: 1px solid #ffcc80;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4a230f;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el texto de advertencia/resultado */
+.result-box.error {
+    background-color: #fce4e4;
+    border-color: #f44336;
+    color: #d32f2f;
+}
+
+footer {
+    background-color: #0c700c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ===========================
+   🔹 MEDIA QUERY PARA MÓVILES
+   =========================== */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    /* Navegación */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    /* Contenedor principal */
+    .padre-contenedor {
+        padding: 12px;
+    }
+
+    .contenedor-tarjeta {
+        padding: 16px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Texto */
+    .contenedor-tarjeta h2 {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-tarjeta h3 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 16px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    /* * 🐜 ESTILOS ESPECÍFICOS DE LA CALCULADORA 
+     */
+
+    .calculator-container {
+        /* Reduce el margen superior e inferior para ocupar más espacio vertical */
+        margin: 20px auto; 
+        
+        /* Reduce el padding interior para que el contenido tenga más espacio */
+        padding: 20px; 
+        
+        /* Asegura que ocupe todo el ancho disponible si hay mucho margen lateral */
+        width: 95%; 
+    }
+
+    .title {
+        /* Reduce el tamaño del título principal para que quepa en una línea */
+        font-size: 1.6em; 
+    }
+
+    .subtitle {
+        /* Reduce el margen inferior para compactar un poco más */
+        margin-bottom: 15px; 
+    }
+
+    .input-group label {
+        /* Asegura que la etiqueta no sea demasiado grande */
+        font-size: 0.95em; 
+    }
+
+    .input-group input {
+        /* Reduce ligeramente el padding de los campos para ahorrar espacio vertical */
+        padding: 10px; 
+        font-size: 0.9em;
+    }
+
+    #calculate-btn {
+        /* Reduce el padding del botón para hacerlo menos alto */
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .result-box {
+        /* Reduce el padding y el tamaño de fuente del resultado */
+        padding: 12px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+    
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
